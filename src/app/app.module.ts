@@ -7,6 +7,8 @@ import { SortingComponent } from './components/sorting/sorting.component';
 import { CarListComponent } from './components/car-list/car-list.component';
 import { CarRowComponent } from './components/car-row/car-row.component';
 import { AddCarComponent } from './components/add-car/add-car.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CarComponent } from './pages/car/car.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { AddCarComponent } from './components/add-car/add-car.component';
     CarListComponent,
     CarRowComponent,
     AddCarComponent,
+    HomeComponent,
+    CarComponent,
   ],
   imports: [
     BrowserModule,
