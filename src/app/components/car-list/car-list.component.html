@@ -1,1 +1,7 @@
 <p>car-list works!</p>
+
+<div class="container">
+    <span *ngFor="let car of carList">
+        <app-car-row [carId]="car.id" [carBrand]="car.brand" [carName]="car.name"></app-car-row>
+    </span>
+</div>

@@ -1,8 +1,6 @@
+
 export class Brand {
-    constructor(
-        id : Number,
-        name : string
-    )
-    {}
-    
+      id: number;
+      brand: string;
+      name: string;
 }

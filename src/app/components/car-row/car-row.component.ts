@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-car-row',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./car-row.component.scss']
 })
 export class CarRowComponent implements OnInit {
-
+  @Input() carId: number;
+  @Input() carBrand: string;
+  @Input() carName: string;
   constructor() { }
 
   ngOnInit(): void {
