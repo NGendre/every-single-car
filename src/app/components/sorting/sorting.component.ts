@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Brand } from 'src/app/model/brand';
 
 
 @Component({

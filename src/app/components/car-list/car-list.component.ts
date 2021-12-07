@@ -24,8 +24,6 @@ export class CarListComponent implements OnInit {
   carList = [
     this.ferrari,this.peugeot,this.ford
   ]
-  //console.log(ferrari);
-  
 
   constructor() { }
 
