@@ -10,6 +10,10 @@ export class CarRowComponent implements OnInit {
   @Input() carId: number;
   @Input() carBrand: string;
   @Input() carName: string;
+  @Input() carDescription: string;
+  @Input() carEnginePlacement: number;
+  @Input() carDriveTrain: number;
+
   constructor() { }
 
   ngOnInit(): void {
