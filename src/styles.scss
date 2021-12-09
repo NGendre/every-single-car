@@ -1,1 +1,30 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.css" 
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(25%,50%);
+}
+.card{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5%;
+}
+.card-col-infos{
+    grid-column: 1;
+    grid-row: 1;
+}
+.card-col-image{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+.card-description{
+    grid-column: 2;
+    grid-row: 1;
+}
