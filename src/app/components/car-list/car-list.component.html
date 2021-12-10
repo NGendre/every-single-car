@@ -3,6 +3,7 @@
 <div class="container">
     <span *ngFor="let car of carList; let i = index">
         <app-car-row [carId]="car.id" [carBrand]="car.brand" [carName]="car.name" 
-            [carDescription]="car.description" [carEnginePlacement]="car.enginePlacement" [carDriveTrain]="car.driveTrain"></app-car-row>
+            [carDescription]="car.description" [carEnginePlacement]="car.enginePlacement" 
+            [carDriveTrain]="car.driveTrain"></app-car-row>
     </span> 
 </div>
