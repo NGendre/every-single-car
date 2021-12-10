@@ -1,19 +1,35 @@
 <div class="container">
-    <div class="row">
-        <div class="card w-100">
+    <div class="card">
+            <div class="card-infos">
+                <div class="car-title">
+                    {{carBrand}} {{carName}}
+                </div> 
+                Engine placement:
+                <div [ngSwitch]="carEnginePlacement">
+                    <div *ngSwitchCase="0">Front Engine</div>
+                    <div *ngSwitchCase="1">Middle Engine</div>
+                    <div *ngSwitchCase="2">Rear Engine</div>
+                    <div *ngSwitchDefault>Erreur</div>
+                </div>
+            </div>
+            <div class="card-img">
+                <img src="https://img.le-dictionnaire.com/car-autocar.jpg">
+            </div>
+            <div class="card-description"> 
+                {{carDescription}}
+            </div>
+    
+                <!--<div class="card-col-infos">
             {{carBrand}} {{carName}}
             Engine placement:
-            <div [ngSwitch]="carEnginePlacement">
-            <div *ngSwitchCase="0">Front Engine</div>
-            <div *ngSwitchCase="1">Middle Engine</div>
-            <div *ngSwitchCase="2">Rear Engine</div>
-            <div *ngSwitchDefault>Erreur</div>
+            
         </div>
-        <div [ngSwitch]="carDriveTrain">
+        <div class="card-col-image" [ngSwitch]="carDriveTrain">
+            Drivetrain:
             <div *ngSwitchCase="0"><img src="">F</div>
             <div *ngSwitchCase="1"><img src="">A</div>
             <div *ngSwitchCase="2"><img src="">R</div>
             <div *ngSwitchDefault>Erreur</div>
-        </div>
+        </div> -->
     </div>
 </div>
